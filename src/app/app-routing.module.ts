@@ -6,12 +6,11 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
-  {path:'', component:HomeComponent},
+  {path:'home', component:HomeComponent},
   {path:'personalprofile', component:PersonalprofileComponent},
   {path:'gallery', component:GalleryComponent},
   {path:'contact',component:ContactComponent},
-  {path:'**',component:HomeComponent},
-
+  {path:'**', redirectTo: "home"},
 ];
 
 @NgModule({
