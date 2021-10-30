@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>{{title}}</span>
+      <mat-icon (click)='isToggle = !isToggle'>menu</mat-icon>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-list *ngIf='isToggle'>
+    <mat-list-item>
+      <mat-icon>home</mat-icon>
+      <a routerLink='' title="home">Home</a>
+    </mat-list-item>
+  
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <mat-icon>person</mat-icon>
+      <a routerLink='/personalprofile' title="personalprofile">Profile</a>
+    </mat-list-item>
+  
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <mat-icon>collections</mat-icon>
+      <a routerLink='/gallery' title="gallery">Gallery</a>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <mat-icon>contacts</mat-icon>
+      <a routerLink='/contact' title="contacts">Contact</a>
+    </mat-list-item>
+  
+    <mat-divider></mat-divider>
+    <p> Danimar Yanuario  {{date}} &copy;</p>
+  </mat-list>

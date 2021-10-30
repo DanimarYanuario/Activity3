@@ -1,0 +1,51 @@
+<app-navigation title='Personalprofile'></app-navigation>
+<div class='profile-container'>
+<div class='content-container'>
+    <mat-card class="example-card">
+    <mat-card-header>
+        <img mat-card-avatar src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.6435-9/156256903_1693416737530742_5695193236438481263_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=174925&_nc_eui2=AeFW2BzLWGZuWsgyZWBoMLEKPGPRGOdqvrM8Y9EY52q-s6cJz1bQ0TcyoigDZFjvHl7soXe8L6kjLSFBkKVpqf5_&_nc_ohc=5YuGYnxsFMkAX-5HIQP&_nc_ht=scontent.fmnl4-1.fna&oh=1e73f717ffceb9ead423128c06538d40&oe=619E3C9A" alt="Avatar" title="Anime">
+        <mat-card-title>Danimar Yanuario</mat-card-title>
+        <mat-card-subtitle>BSIT-3E</mat-card-subtitle>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+        <img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.6435-9/121223623_1583761665162917_7626946921742582180_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=174925&_nc_eui2=AeE82znwcDCGPXruLZZgAfCURDAqexYdqMdEMCp7Fh2ox8u2UUyz58zd6G75o140O5fnHtyewRHsGlfvAThZ1xPu&_nc_ohc=qkkYw-WQcAgAX86SIya&_nc_ht=scontent.fmnl4-2.fna&oh=4df9ca168645d8a533ee4162e53fa51b&oe=61A1B403" alt="Danimar Yanuario" title="Danimar Yanuario" height="300">
+        <mat-list>
+        <mat-list-item>
+            <mat-icon>school</mat-icon>
+            <p>Name: Eastern Visayas State University</p>
+        </mat-list-item>
+
+        <mat-list-item>
+            <mat-icon>info</mat-icon>
+            <p>Course: BSIT</p>
+        </mat-list-item>
+
+        <mat-list-item>
+            <mat-icon>male</mat-icon>
+            <p>Gender: Male</p>
+        </mat-list-item>
+
+        <mat-list-item>
+            <mat-icon>location_on</mat-icon>
+            <p>Address: Brgy: 93, Bagacay Tacloban City</p>
+        </mat-list-item>
+
+        <mat-list-item>
+            <mat-icon>phone_contact</mat-icon>
+            <p>Contact #: 09631871540</p>
+        </mat-list-item>
+
+        <mat-card-actions>
+            <button mat-button (click)='isClickLike=!isClickLike'
+                    [ngClass]='{"like" : isClickLike }' ><mat-icon>thumb_up</mat-icon></button>
+            <button mat-button (click)='isClickHeart=!isClickHeart'
+                    [ngClass]='{"heart" : isClickHeart }'><mat-icon>favorite</mat-icon></button>
+        </mat-card-actions>
+
+
+        </mat-list>
+    </mat-card-content>
+    </mat-card>
+</div>
+</div>
